@@ -317,70 +317,26 @@
         </div>
     </section>
 
-    <!-- RESUME MODAL (MATCHING EXACT RESUME TEXT) -->
+    <!-- RESUME MODAL (EMBEDDED PDF VIEWER) -->
     <div id="resumeModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative shadow-2xl border border-zinc-200">
-            <button onclick="closeResumeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-800 text-xl font-bold p-2">
-                &times;
-            </button>
-            
-            <div class="flex items-center justify-between border-b pb-4 mb-6">
-                <div>
-                    <h3 class="text-2xl font-bold text-zinc-900">Tin Chak Xu</h3>
-                    <p class="text-xs text-zinc-500 font-mono">(929) 969-2316 | tx975@nyu.edu | github.com/tinchakxu</p>
+        <div class="bg-white rounded-xl max-w-4xl w-full h-[85vh] p-4 relative shadow-2xl flex flex-col">
+            <div class="flex items-center justify-between pb-3 border-b mb-3 px-2">
+                <h3 class="text-lg font-bold text-zinc-900">Tin Chak Xu - Resume</h3>
+                <div class="flex items-center gap-3">
+                    <a href="Tin_Chak_Xu_Resume.pdf" download class="px-3 py-1.5 bg-zinc-900 text-white text-xs font-semibold rounded hover:bg-zinc-700 transition">
+                        <i class="fas fa-download mr-1"></i> Download PDF
+                    </a>
+                    <button onclick="closeResumeModal()" class="text-zinc-400 hover:text-zinc-800 text-2xl font-bold px-2">
+                        &times;
+                    </button>
                 </div>
-                <a href="#" download id="resumeDirectDownload" class="px-4 py-2 bg-zinc-900 text-white text-xs font-semibold rounded hover:bg-zinc-700 transition">
-                    <i class="fas fa-download mr-1"></i> Download PDF
-                </a>
             </div>
-
-            <div class="space-y-6 text-sm text-zinc-700">
-                <div>
-                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Education</h4>
-                    <p class="font-semibold">New York University — Bachelor of Science in Computer Science</p>
-                    <p class="text-xs text-zinc-600">New York, NY | Expected May 2030</p>
-                    <p class="text-xs text-zinc-600 mt-1">• In Progress: Introduction to Programming and Problem Solving; Calculus I; General Chemistry for Engineers</p>
-                    <p class="text-xs text-zinc-600">• Planned (Spring 2027): Data Structures and Algorithms; Calculus II; Introduction to Engineering and Design</p>
-                    <p class="text-xs text-zinc-500 mt-1">Activities: Tech@NYU, Chess Team, Robotics Club, Stern Finance Society, Philosophy Club</p>
-                    <p class="text-xs text-zinc-600 mt-2 font-medium">The American School of Barcelona — International Baccalaureate Diploma</p>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Experience</h4>
-                    <p class="font-semibold">AI Security Researcher @ OSIRIS Lab</p>
-                    <p class="text-xs text-zinc-500 mb-1">Barcelona, Spain / New York, NY | Oct. 2026 – Present</p>
-                    <p class="text-xs text-zinc-600 mb-2">• Research defenses against indirect prompt injection in AI-native applications, focusing on local AI agents processing documents, logs, and tool outputs. Explore when agents should run additional security checks to balance protection, response latency, computational cost, and energy use.</p>
-                    
-                    <p class="font-semibold">Assistant Chess Instructor @ The American School of Barcelona</p>
-                    <p class="text-xs text-zinc-500 mb-1">Barcelona, Spain | Sep. 2022 – June 2024</p>
-                    <p class="text-xs text-zinc-600">• Helped teach chess fundamentals to 30+ beginner students; developed a Python trainer with 80 original tactical puzzles for classroom practice.</p>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Projects</h4>
-                    <p class="font-semibold">Heat Ahead NYC (Python, IBM LinuxONE)</p>
-                    <p class="text-xs text-zinc-500 mb-1">Oct. 2026 – Present</p>
-                    <p class="text-xs text-zinc-600 mb-2">• Formed and led a six-person IBM Z Datathon team, recruiting members including graduate students. Built an interactive map of predicted heating-failure risk across NYC boroughs to help inspectors prioritize buildings during extreme weather. Developed the machine learning pipeline, integrating historical housing records with live weather data. Set up a LinuxONE test environment; benchmarked batch inference at 480,000+ building records/sec.</p>
-
-                    <p class="font-semibold">Blackjack Card-Counting Simulator (Python, Google Colab, Google Sheets)</p>
-                    <p class="text-xs text-zinc-500 mb-1">Oct. 2025 – Dec. 2025</p>
-                    <p class="text-xs text-zinc-600">• Built a six-deck blackjack simulator implementing basic strategy and Hi-Lo card counting; recorded 180,000 rounds across nine true-count levels with approximately one deck remaining. Debugged dealer rules, count normalization, and sampling logic; analyzed win, push, and loss rates and fitted outcome trends using linear regression.</p>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Leadership</h4>
-                    <p class="font-semibold">Founder @ International Schools Chess Association</p>
-                    <p class="text-xs text-zinc-500 mb-1">Barcelona, Spain | Sep. 2024 – May 2026</p>
-                    <p class="text-xs text-zinc-600">• Founded an online chess league connecting 100+ players across 23 schools; organized tournaments and managed weekly pairings, match schedules, and league operations.</p>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Technical Skills & Languages</h4>
-                    <p class="text-xs text-zinc-600"><strong>Programming & Web:</strong> Python, HTML, CSS</p>
-                    <p class="text-xs text-zinc-600"><strong>Tools & Platforms:</strong> Linux, IBM LinuxONE, Microsoft Excel</p>
-                    <p class="text-xs text-zinc-600"><strong>Technical Areas:</strong> AI Security, Computer Networking, Data Visualization, Statistical Analysis</p>
-                    <p class="text-xs text-zinc-600"><strong>Spoken Languages:</strong> English, Spanish, Mandarin Chinese</p>
-                </div>
+            <div class="flex-1 w-full h-full rounded overflow-hidden">
+                <object data="Tin_Chak_Xu_Resume.pdf" type="application/pdf" class="w-full h-full">
+                    <p class="p-4 text-xs text-zinc-600">
+                        Your browser does not support embedded PDFs. <a href="Tin_Chak_Xu_Resume.pdf" download class="underline text-blue-600">Click here to download the PDF directly.</a>
+                    </p>
+                </object>
             </div>
         </div>
     </div>
