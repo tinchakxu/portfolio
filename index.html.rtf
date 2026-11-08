@@ -1,0 +1,451 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="en" class="scroll-smooth">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Tin Chak Xu - Portfolio</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\
+    \
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    fontFamily: \{\
+                        sans: ['Inter', 'sans-serif'],\
+                        mono: ['JetBrains Mono', 'monospace'],\
+                    \},\
+                    colors: \{\
+                        background: '#FDFDFC',\
+                        surface: '#FFFFFF',\
+                        border: '#E4E4E7',\
+                        textMain: '#18181B',\
+                        textMuted: '#71717A',\
+                        accent: '#27272A',\
+                    \},\
+                    animation: \{\
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',\
+                    \},\
+                    keyframes: \{\
+                        fadeIn: \{\
+                            '0%': \{ opacity: '0', transform: 'translateY(10px)' \},\
+                            '100%': \{ opacity: '1', transform: 'translateY(0)' \},\
+                        \}\
+                    \}\
+                \}\
+            \}\
+        \}\
+    </script>\
+    <style>\
+        body \{\
+            background-color: theme('colors.background');\
+            color: theme('colors.textMain');\
+            -webkit-font-smoothing: antialiased;\
+        \}\
+\
+        .reveal \{\
+            opacity: 0;\
+            transform: translateY(20px);\
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;\
+        \}\
+        .reveal.active \{\
+            opacity: 1;\
+            transform: translateY(0);\
+        \}\
+\
+        .minimal-card \{\
+            transition: all 0.3s ease;\
+        \}\
+        .minimal-card:hover \{\
+            transform: translateY(-2px);\
+            box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.05);\
+            border-color: #d4d4d8;\
+        \}\
+        \
+        .nav-blur \{\
+            background: rgba(253, 253, 252, 0.85);\
+            backdrop-filter: blur(8px);\
+            -webkit-backdrop-filter: blur(8px);\
+        \}\
+    </style>\
+</head>\
+<body class="selection:bg-zinc-200 selection:text-zinc-900">\
+\
+    <!-- NAVIGATION -->\
+    <nav class="fixed w-full z-50 nav-blur border-b border-transparent transition-all duration-300" id="navbar">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">\
+            <div class="flex items-center justify-between h-20">\
+                <a href="#" class="flex items-center gap-3 font-semibold text-lg tracking-tight text-textMain hover:text-textMuted transition-colors">\
+                    <svg class="w-8 h-8" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                        <polygon points="120,20 206,70 206,170 120,220 34,170 34,70" stroke="#CBD5E1" stroke-width="12" stroke-linejoin="round"/>\
+                        <path d="M 65 95 L 95 95 M 80 95 L 80 150" stroke="#1D4ED8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>\
+                        <path d="M 135 95 L 105 95 L 105 150 L 135 150" stroke="#4338CA" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>\
+                        <path d="M 145 95 L 175 150 M 175 95 L 145 150" stroke="#3B82F6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>\
+                        <circle cx="120" cy="50" r="10" fill="#10B981" />\
+                    </svg>\
+                    Tin Chak Xu\
+                </a>\
+                <div class="hidden md:flex space-x-8">\
+                    <a href="#about" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">About</a>\
+                    <a href="#projects" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Projects</a>\
+                    <a href="#leadership" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Leadership</a>\
+                    <a href="#skills" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Skills</a>\
+                    <a href="#contact" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Contact</a>\
+                </div>\
+            </div>\
+        </div>\
+    </nav>\
+\
+    <!-- HERO SECTION -->\
+    <section id="hero" class="min-h-[90vh] flex items-center pt-20">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 w-full">\
+            <div class="max-w-3xl animate-fade-in">\
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-xs font-mono text-zinc-600 mb-8">\
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>\
+                    CS @ NYU (Exp. 2030) &nbsp;|&nbsp; AI Security Researcher @ OSIRIS Lab\
+                </div>\
+                \
+                <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-textMain">\
+                    Building resilient software and secure systems.\
+                </h1>\
+                \
+                <p class="text-lg text-textMuted mb-10 leading-relaxed max-w-2xl font-light">\
+                    I am a Computer Science student at NYU focusing on <strong class="font-medium text-textMain">Security</strong>, <strong class="font-medium text-textMain">AI Engineering</strong>, and <strong class="font-medium text-textMain">Quantitative Development</strong>. Driven by optimizing complex infrastructure, I research agent safety and build data-intensive tools.\
+                </p>\
+                \
+                <div class="flex flex-wrap gap-4">\
+                    <a href="#projects" class="px-6 py-3 bg-textMain text-white rounded-lg text-sm font-medium hover:bg-zinc-800 transition-colors flex items-center gap-2">\
+                        View Projects <i class="fas fa-arrow-right text-xs"></i>\
+                    </a>\
+                    <button onclick="openResumeModal()" class="px-6 py-3 bg-white border border-border text-textMain rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors flex items-center gap-2">\
+                        <i class="fas fa-file-pdf text-red-500"></i> View Resume PDF\
+                    </button>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- ABOUT ME -->\
+    <section id="about" class="py-24 border-t border-border bg-white">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">\
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">\
+                <div class="md:col-span-4 reveal">\
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">01. Background</h2>\
+                    <h3 class="text-2xl font-semibold text-textMain">About Me</h3>\
+                </div>\
+                \
+                <div class="md:col-span-8 reveal space-y-6 text-textMuted font-light leading-relaxed">\
+                    <p>\
+                        My journey into software engineering is driven by a fascination with how complex systems can be <strong class="font-medium text-textMain">optimized, scaled, and secured</strong>. As a trilingual (English, Mandarin, Spanish) CS undergraduate at NYU, I research AI security defenses at the OSIRIS Lab\'97focusing on indirect prompt injection vulnerabilities in AI agents processing logs, documents, and tool outputs.\
+                    </p>\
+                    <p>\
+                        At NYU, I participate in <strong class="font-medium text-textMain">Tech@NYU, Chess Team, Robotics Club, Stern Finance Society, and Philosophy Club</strong>. My practical engineering work ranges from benchmarking enterprise model pipelines on IBM LinuxONE systems to quantitative simulation engines in Python.\
+                    </p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- PROJECTS -->\
+    <section id="projects" class="py-24 border-t border-border">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">\
+            <div class="mb-16 reveal">\
+                <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">02. Work</h2>\
+                <h3 class="text-2xl font-semibold text-textMain">Featured Projects</h3>\
+            </div>\
+            \
+            <div class="space-y-12">\
+                <!-- Project 1 -->\
+                <div class="bg-white border border-border rounded-xl p-8 minimal-card flex flex-col reveal">\
+                    <div class="flex items-center gap-4 mb-4">\
+                        <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-textMain text-lg">\
+                            <i class="fas fa-building"></i>\
+                        </div>\
+                        <div>\
+                            <h4 class="text-xl font-semibold text-textMain">HeatAhead NYC</h4>\
+                            <p class="text-sm text-textMuted italic mt-1">Predicting urban infrastructure failures using housing and weather data at enterprise speed.</p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">\
+                        <div>\
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">The Challenge & Role</h5>\
+                            <p class="text-sm text-textMuted leading-relaxed">\
+                                Formed and led a 6-person team at the IBM Z Datathon. Developed a machine learning pipeline integrating historical housing records with live weather data to generate interactive risk maps for NYC building inspectors.\
+                            </p>\
+                        </div>\
+                        <div>\
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Results & Impact</h5>\
+                            <p class="text-sm text-textMuted leading-relaxed">\
+                                Configured a LinuxONE test environment and benchmarked batch inference at <strong class="text-textMain font-medium">480,000+ building records/sec</strong>.\
+                            </p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-100">\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Python</span>\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">IBM LinuxONE</span>\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Data Pipeline</span>\
+                    </div>\
+                </div>\
+\
+                <!-- Project 2 -->\
+                <div class="bg-white border border-border rounded-xl p-8 minimal-card flex flex-col reveal">\
+                    <div class="flex items-center gap-4 mb-4">\
+                        <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-textMain text-lg">\
+                            <i class="fas fa-chart-line"></i>\
+                        </div>\
+                        <div>\
+                            <h4 class="text-xl font-semibold text-textMain">Blackjack Card-Counting Simulator</h4>\
+                            <p class="text-sm text-textMuted italic mt-1">Modeling player advantage and expected value using probabilistic algorithms.</p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">\
+                        <div>\
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">The Challenge & Role</h5>\
+                            <p class="text-sm text-textMuted leading-relaxed">\
+                                Built a 6-deck simulator implementing basic strategy and Hi-Lo counting. Recorded 180,000 rounds across 9 true-count levels with approximately one deck remaining.\
+                            </p>\
+                        </div>\
+                        <div>\
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Results & Impact</h5>\
+                            <p class="text-sm text-textMuted leading-relaxed">\
+                                Analyzed win/push/loss rates and fitted outcome trends with linear regression, confirming expected statistical edge shift across true counts.\
+                            </p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-100">\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Python</span>\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Google Colab</span>\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Statistical Analysis</span>\
+                    </div>\
+                </div>\
+\
+                <!-- Project 3 -->\
+                <div class="bg-white border border-border rounded-xl p-8 minimal-card flex flex-col reveal">\
+                    <div class="flex items-center gap-4 mb-4">\
+                        <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-textMain text-lg">\
+                            <i class="fas fa-chess-knight"></i>\
+                        </div>\
+                        <div>\
+                            <h4 class="text-xl font-semibold text-textMain">Python Chess Tactical Trainer</h4>\
+                            <p class="text-sm text-textMuted italic mt-1">Gamifying chess education through custom interactive algorithms.</p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">\
+                        <div>\
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Overview</h5>\
+                            <p class="text-sm text-textMuted leading-relaxed">\
+                                Programmed core move validation logic and authored 80 original tactical puzzles for teaching 30+ beginner students as Assistant Chess Instructor.\
+                            </p>\
+                        </div>\
+                        <div>\
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Impact</h5>\
+                            <p class="text-sm text-textMuted leading-relaxed">\
+                                Accelerated pattern recognition and tactical mastery for students through interactive classroom feedback loops.\
+                            </p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-100">\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Python</span>\
+                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Algorithms</span>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- LEADERSHIP -->\
+    <section id="leadership" class="py-24 border-t border-border bg-white">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">\
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">\
+                <div class="md:col-span-4 reveal">\
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">03. Impact</h2>\
+                    <h3 class="text-2xl font-semibold text-textMain">Leadership</h3>\
+                </div>\
+                \
+                <div class="md:col-span-8 reveal">\
+                    <div class="border-l-2 border-zinc-200 pl-6 space-y-2">\
+                        <div class="flex justify-between items-baseline">\
+                            <h4 class="text-lg font-semibold text-textMain">Founder \'97 International Schools Chess Association</h4>\
+                            <span class="text-xs font-mono text-textMuted">Sep 2024 \'96 May 2026</span>\
+                        </div>\
+                        <p class="text-sm text-textMuted leading-relaxed">\
+                            Founded and ran an online chess league connecting over <strong class="text-textMain font-medium">100+ players across 23 schools</strong>. Managed weekly match pairings, league operations, and tournament structures.\
+                        </p>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- SKILLS -->\
+    <section id="skills" class="py-24 border-t border-border">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">\
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">\
+                <div class="md:col-span-4 reveal">\
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">04. Expertise</h2>\
+                    <h3 class="text-2xl font-semibold text-textMain">Technical Skills</h3>\
+                </div>\
+                \
+                <div class="md:col-span-8 grid grid-cols-2 gap-y-8 gap-x-8 reveal">\
+                    <div>\
+                        <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Programming & Web</h4>\
+                        <ul class="space-y-1.5 text-sm text-textMuted font-mono">\
+                            <li>Python</li>\
+                            <li>HTML5 / CSS3</li>\
+                        </ul>\
+                    </div>\
+\
+                    <div>\
+                        <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Tools & Platforms</h4>\
+                        <ul class="space-y-1.5 text-sm text-textMuted font-mono">\
+                            <li>Linux</li>\
+                            <li>IBM LinuxONE</li>\
+                            <li>Microsoft Excel</li>\
+                        </ul>\
+                    </div>\
+\
+                    <div>\
+                        <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Technical Areas</h4>\
+                        <ul class="space-y-1.5 text-sm text-textMuted">\
+                            <li>AI Security Research</li>\
+                            <li>Computer Networking</li>\
+                            <li>Data Visualization</li>\
+                            <li>Statistical Analysis</li>\
+                        </ul>\
+                    </div>\
+\
+                    <div>\
+                        <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Spoken Languages</h4>\
+                        <ul class="space-y-1.5 text-sm text-textMuted">\
+                            <li>English (Fluent)</li>\
+                            <li>Spanish (Fluent)</li>\
+                            <li>Mandarin Chinese (Fluent)</li>\
+                        </ul>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- CONTACT / FOOTER -->\
+    <section id="contact" class="py-24 border-t border-border bg-white">\
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center reveal">\
+            <h2 class="text-3xl font-bold text-textMain mb-6">Let's Connect</h2>\
+            <p class="text-textMuted max-w-xl mx-auto mb-10 text-sm leading-relaxed">\
+                Open to software engineering, security, and quant dev roles. Feel free to reach out directly via email or LinkedIn.\
+            </p>\
+            \
+            <a href="mailto:tx975@nyu.edu" class="inline-flex items-center gap-2 px-6 py-3 bg-textMain text-white rounded-lg text-sm font-medium hover:bg-zinc-800 transition-colors mb-16">\
+                <i class="fas fa-envelope"></i> tx975@nyu.edu\
+            </a>\
+            \
+            <div class="flex items-center justify-center gap-6 border-t border-border pt-8">\
+                <a href="https://www.linkedin.com/in/tin-chak-xu-3a391638a/" target="_blank" class="text-textMuted hover:text-textMain transition-colors text-sm font-medium">LinkedIn</a>\
+                <a href="https://github.com/tinchakxu" target="_blank" class="text-textMuted hover:text-textMain transition-colors text-sm font-medium">GitHub</a>\
+                <button onclick="openResumeModal()" class="text-textMuted hover:text-textMain transition-colors text-sm font-medium">Resume PDF</button>\
+            </div>\
+            \
+            <p class="text-xs text-textMuted mt-8 font-mono">\
+                &copy; 2026 Tin Chak Xu.\
+            </p>\
+        </div>\
+    </section>\
+\
+    <!-- RESUME MODAL -->\
+    <div id="resumeModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">\
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative shadow-2xl border border-zinc-200">\
+            <button onclick="closeResumeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-800 text-xl font-bold p-2">\
+                &times;\
+            </button>\
+            \
+            <div class="flex items-center justify-between border-b pb-4 mb-6">\
+                <div>\
+                    <h3 class="text-2xl font-bold text-zinc-900">Tin Chak Xu</h3>\
+                    <p class="text-xs text-zinc-500 font-mono">NYU Computer Science | Expected May 2030</p>\
+                </div>\
+                <a href="Tin_Chak_Xu_Resume.pdf" download id="resumeDirectDownload" class="px-4 py-2 bg-zinc-900 text-white text-xs font-semibold rounded hover:bg-zinc-700 transition">\
+                    <i class="fas fa-download mr-1"></i> Download PDF\
+                </a>\
+            </div>\
+\
+            <div class="space-y-6 text-sm text-zinc-700">\
+                <div>\
+                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Education</h4>\
+                    <p class="font-semibold">New York University \'97 B.S. in Computer Science</p>\
+                    <p class="text-xs text-zinc-500">Activities: Tech@NYU, Chess Team, Robotics Club, Stern Finance Society, Philosophy Club</p>\
+                </div>\
+\
+                <div>\
+                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Experience</h4>\
+                    <p class="font-semibold">AI Security Researcher @ OSIRIS Lab (Oct 2026 \'96 Present)</p>\
+                    <p class="text-xs text-zinc-600 mb-2">\'95 Researching indirect prompt injection defenses for local AI agents processing logs & tool outputs.</p>\
+                    <p class="font-semibold">Assistant Chess Instructor @ American School of Barcelona (Sep 2022 \'96 Jun 2024)</p>\
+                    <p class="text-xs text-zinc-600">\'95 Taught 30+ beginner students with a custom 80-puzzle Python trainer.</p>\
+                </div>\
+\
+                <div>\
+                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Projects</h4>\
+                    <p class="font-semibold">Heat Ahead NYC (IBM LinuxONE, Python)</p>\
+                    <p class="text-xs text-zinc-600 mb-2">\'95 Benchmarked NYC heating failure risk model at 480k+ records/sec.</p>\
+                    <p class="font-semibold">Blackjack Card-Counting Simulator (Python, Colab)</p>\
+                    <p class="text-xs text-zinc-600">\'95 Simulated 180,000 rounds to analyze true-count player advantage.</p>\
+                </div>\
+\
+                <div>\
+                    <h4 class="font-bold text-zinc-900 uppercase text-xs tracking-wider border-b pb-1 mb-2">Leadership</h4>\
+                    <p class="font-semibold">Founder @ International Schools Chess Association</p>\
+                    <p class="text-xs text-zinc-600">\'95 Founded online league connecting 100+ players across 23 schools.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+\
+    <!-- SCRIPTS -->\
+    <script>\
+        const navbar = document.getElementById('navbar');\
+        window.addEventListener('scroll', () => \{\
+            if (window.scrollY > 20) \{\
+                navbar.classList.add('border-border');\
+            \} else \{\
+                navbar.classList.remove('border-border');\
+            \}\
+        \});\
+\
+        const revealElements = document.querySelectorAll('.reveal');\
+        const revealOptions = \{ threshold: 0.1, rootMargin: "0px 0px -20px 0px" \};\
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) \{\
+            entries.forEach(entry => \{\
+                if (entry.isIntersecting) \{\
+                    entry.target.classList.add('active');\
+                    observer.unobserve(entry.target);\
+                \}\
+            \});\
+        \}, revealOptions);\
+\
+        revealElements.forEach(el => revealOnScroll.observe(el));\
+\
+        function openResumeModal() \{\
+            document.getElementById('resumeModal').classList.remove('hidden');\
+        \}\
+        function closeResumeModal() \{\
+            document.getElementById('resumeModal').classList.add('hidden');\
+        \}\
+    </script>\
+</body>\
+</html>}
