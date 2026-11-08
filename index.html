@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin Chak Xu - Portfolio</title>
+    <title>Tin Chak Xu - Portfolio & Research</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -88,10 +88,11 @@
                 </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">About</a>
+                    <a href="#education" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Education</a>
                     <a href="#projects" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Projects</a>
+                    <a href="#experience" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Experience</a>
                     <a href="#leadership" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Leadership</a>
                     <a href="#skills" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Skills</a>
-                    <a href="#contact" class="text-sm font-medium text-textMuted hover:text-textMain transition-colors">Contact</a>
                 </div>
             </div>
         </div>
@@ -111,7 +112,7 @@
                 </h1>
                 
                 <p class="text-lg text-textMuted mb-10 leading-relaxed max-w-2xl font-light">
-                    I am a Computer Science student at NYU focusing on <strong class="font-medium text-textMain">Security</strong>, <strong class="font-medium text-textMain">AI Engineering</strong>, and <strong class="font-medium text-textMain">Quantitative Development</strong>. Driven by optimizing complex infrastructure, I research agent safety and build data-intensive tools.
+                    Trilingual Computer Science undergraduate at NYU focusing on <strong class="font-medium text-textMain">AI Security</strong>, <strong class="font-medium text-textMain">Systems Optimization</strong>, and <strong class="font-medium text-textMain">Quantitative Development</strong>. Passionate about tackling complex data infrastructures and agent safety.
                 </p>
                 
                 <div class="flex flex-wrap gap-4">
@@ -119,7 +120,7 @@
                         View Projects <i class="fas fa-arrow-right text-xs"></i>
                     </a>
                     <button onclick="openResumeModal()" class="px-6 py-3 bg-white border border-border text-textMain rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors flex items-center gap-2">
-                        <i class="fas fa-file-pdf text-red-500"></i> View Resume PDF
+                        <i class="fas fa-file-pdf text-red-500"></i> View / Download Resume PDF
                     </button>
                 </div>
             </div>
@@ -137,90 +138,164 @@
                 
                 <div class="md:col-span-8 reveal space-y-6 text-textMuted font-light leading-relaxed">
                     <p>
-                        My journey into software engineering is driven by a fascination with how complex systems can be <strong class="font-medium text-textMain">optimized, scaled, and secured</strong>. As a trilingual (English, Mandarin, Spanish) CS undergraduate at NYU, I research AI security defenses at the OSIRIS Lab—focusing on indirect prompt injection vulnerabilities in AI agents processing logs, documents, and tool outputs.
+                        My journey into software engineering is driven by a fascination with how complex systems can be <strong class="font-medium text-textMain">optimized, scaled, and secured</strong>. As a trilingual speaker fluent in <strong class="font-medium text-textMain">English, Spanish, and Mandarin Chinese</strong>, I enjoy operating in international and multidisciplinary environments.
                     </p>
                     <p>
-                        At NYU, I participate in <strong class="font-medium text-textMain">Tech@NYU, Chess Team, Robotics Club, Stern Finance Society, and Philosophy Club</strong>. My practical engineering work ranges from benchmarking enterprise model pipelines on IBM LinuxONE systems to quantitative simulation engines in Python.
+                        Currently, I research AI security defenses at the OSIRIS Lab, exploring indirect prompt injection vulnerabilities in AI-native applications processing logs, documents, and tool outputs. At NYU, I am actively involved across campus in <strong class="font-medium text-textMain">Tech@NYU, Chess Team, Robotics Club, Stern Finance Society, and Philosophy Club</strong>.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- EDUCATION & COURSEWORK -->
+    <section id="education" class="py-24 border-t border-border">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4 reveal">
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">02. Academic</h2>
+                    <h3 class="text-2xl font-semibold text-textMain">Education</h3>
+                </div>
+                
+                <div class="md:col-span-8 space-y-8 reveal">
+                    <div class="bg-white border border-border rounded-xl p-6 minimal-card">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                            <div>
+                                <h4 class="text-lg font-semibold text-textMain">New York University</h4>
+                                <p class="text-sm text-textMuted">Bachelor of Science in Computer Science</p>
+                            </div>
+                            <span class="text-xs font-mono bg-zinc-100 px-3 py-1 rounded-full text-zinc-600 mt-2 md:mt-0">Expected May 2030</span>
+                        </div>
+                        <div class="space-y-2 text-sm text-textMuted border-t border-zinc-100 pt-4">
+                            <p><strong class="text-textMain font-medium">In Progress:</strong> Introduction to Programming and Problem Solving; Calculus I; General Chemistry for Engineers</p>
+                            <p><strong class="text-textMain font-medium">Planned (Spring 2027):</strong> Data Structures and Algorithms; Calculus II; Introduction to Engineering and Design</p>
+                            <p class="pt-2"><strong class="text-textMain font-medium">Activities & Societies:</strong> Tech@NYU, Chess Team, Robotics Club, Stern Finance Society, Philosophy Club</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-border rounded-xl p-6 minimal-card">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                            <div>
+                                <h4 class="text-lg font-semibold text-textMain">The American School of Barcelona</h4>
+                                <p class="text-sm text-textMuted">International Baccalaureate (IB) Diploma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PROJECTS -->
-    <section id="projects" class="py-24 border-t border-border">
+    <section id="projects" class="py-24 border-t border-border bg-white">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="mb-16 reveal">
-                <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">02. Work</h2>
+                <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">03. Engineering</h2>
                 <h3 class="text-2xl font-semibold text-textMain">Featured Projects</h3>
             </div>
             
             <div class="space-y-12">
                 <!-- Project 1 -->
-                <div class="bg-white border border-border rounded-xl p-8 minimal-card flex flex-col reveal">
+                <div class="border border-border rounded-xl p-8 minimal-card flex flex-col reveal bg-background">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-textMain text-lg">
                             <i class="fas fa-building"></i>
                         </div>
                         <div>
                             <h4 class="text-xl font-semibold text-textMain">Heat Ahead NYC</h4>
-                            <p class="text-sm text-textMuted italic mt-1">Predicting urban infrastructure failures using housing and weather data at enterprise speed.</p>
+                            <p class="text-sm text-textMuted italic mt-1">Predicting urban heating-failure risks across NYC boroughs at enterprise scale.</p>
                         </div>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">
                         <div>
-                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">The Challenge & Role</h5>
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Role & Approach</h5>
                             <p class="text-sm text-textMuted leading-relaxed">
-                                Formed and led a six-person IBM Z Datathon team, recruiting members including graduate students. Built an interactive map of predicted heating-failure risk across NYC boroughs to help inspectors prioritize buildings during extreme weather.
+                                Formed and led a six-person IBM Z Datathon team, recruiting members including graduate students. Developed the machine learning pipeline integrating historical housing records with live weather data to build an interactive risk-prioritization map for inspectors.
                             </p>
                         </div>
                         <div>
-                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Results & Impact</h5>
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Performance & Scale</h5>
                             <p class="text-sm text-textMuted leading-relaxed">
-                                Developed the machine learning pipeline, integrating historical housing records with live weather data. Set up a LinuxONE test environment; benchmarked batch inference at <strong class="text-textMain font-medium">480,000+ building records/sec</strong>.
+                                Configured and deployed on an IBM LinuxONE test environment. Benchmarked batch inference performance, achieving an exceptional throughput of <strong class="text-textMain font-medium">480,000+ building records/sec</strong>.
                             </p>
                         </div>
                     </div>
                     
-                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-100">
-                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Python</span>
-                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">IBM LinuxONE</span>
-                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Data Pipeline</span>
+                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-200">
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Python</span>
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">IBM LinuxONE</span>
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Machine Learning</span>
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Datathon Lead</span>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white border border-border rounded-xl p-8 minimal-card flex flex-col reveal">
+                <div class="border border-border rounded-xl p-8 minimal-card flex flex-col reveal bg-background">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-textMain text-lg">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div>
                             <h4 class="text-xl font-semibold text-textMain">Blackjack Card-Counting Simulator</h4>
-                            <p class="text-sm text-textMuted italic mt-1">Modeling player advantage and expected value using probabilistic algorithms.</p>
+                            <p class="text-sm text-textMuted italic mt-1">Probabilistic modeling and statistical regression analysis of advantage play.</p>
                         </div>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">
                         <div>
-                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">The Challenge & Role</h5>
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Simulation Architecture</h5>
                             <p class="text-sm text-textMuted leading-relaxed">
-                                Built a six-deck blackjack simulator implementing basic strategy and Hi-Lo card counting; recorded 180,000 rounds across nine true-count levels with approximately one deck remaining.
+                                Built a six-deck blackjack simulator implementing basic strategy and Hi-Lo card counting. Recorded 180,000 rounds across nine true-count levels with approximately one deck remaining.
                             </p>
                         </div>
                         <div>
-                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Results & Impact</h5>
+                            <h5 class="text-xs font-semibold uppercase tracking-wider text-textMain mb-2">Analysis & Regression</h5>
                             <p class="text-sm text-textMuted leading-relaxed">
-                                Debugged dealer rules, count normalization, and sampling logic; analyzed win, push, and loss rates and fitted outcome trends using linear regression.
+                                Rigorously debugged dealer rules, count normalization, and sampling logic. Analyzed win, push, and loss rates, fitting outcome trends using linear regression models.
                             </p>
                         </div>
                     </div>
                     
-                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-100">
-                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Python</span>
-                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Google Colab</span>
-                        <span class="px-2.5 py-1 bg-zinc-100 text-zinc-600 text-xs font-mono rounded-md">Google Sheets</span>
+                    <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-zinc-200">
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Python</span>
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Google Colab</span>
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Google Sheets</span>
+                        <span class="px-2.5 py-1 bg-white text-zinc-600 text-xs font-mono rounded-md border border-border">Statistical Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-24 border-t border-border">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4 reveal">
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">04. Research & Work</h2>
+                    <h3 class="text-2xl font-semibold text-textMain">Experience</h3>
+                </div>
+                
+                <div class="md:col-span-8 space-y-12 reveal">
+                    <div class="border-l-2 border-zinc-300 pl-6 space-y-3">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-baseline">
+                            <h4 class="text-lg font-semibold text-textMain">AI Security Researcher — OSIRIS Lab</h4>
+                            <span class="text-xs font-mono text-textMuted">Oct 2026 – Present | Barcelona / NYC</span>
+                        </div>
+                        <p class="text-sm text-textMuted leading-relaxed">
+                            Research defenses against indirect prompt injection in AI-native applications, focusing on local AI agents processing documents, logs, and tool outputs. Explore when agents should run additional security checks to balance protection, response latency, computational cost, and energy use.
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-zinc-300 pl-6 space-y-3">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-baseline">
+                            <h4 class="text-lg font-semibold text-textMain">Assistant Chess Instructor — The American School of Barcelona</h4>
+                            <span class="text-xs font-mono text-textMuted">Sep 2022 – Jun 2024 | Barcelona, Spain</span>
+                        </div>
+                        <p class="text-sm text-textMuted leading-relaxed">
+                            Helped teach chess fundamentals to 30+ beginner students. Developed an interactive Python trainer featuring 80 original tactical puzzles for classroom instruction and practice.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -232,18 +307,18 @@
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div class="md:col-span-4 reveal">
-                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">03. Impact</h2>
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">05. Community</h2>
                     <h3 class="text-2xl font-semibold text-textMain">Leadership</h3>
                 </div>
                 
                 <div class="md:col-span-8 reveal">
-                    <div class="border-l-2 border-zinc-200 pl-6 space-y-2">
-                        <div class="flex justify-between items-baseline">
+                    <div class="border-l-2 border-zinc-300 pl-6 space-y-3">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-baseline">
                             <h4 class="text-lg font-semibold text-textMain">Founder — International Schools Chess Association</h4>
-                            <span class="text-xs font-mono text-textMuted">Sep 2024 – May 2026</span>
+                            <span class="text-xs font-mono text-textMuted">Sep 2024 – May 2026 | Barcelona, Spain</span>
                         </div>
                         <p class="text-sm text-textMuted leading-relaxed">
-                            Founded an online chess league connecting 100+ players across 23 schools; organized tournaments and managed weekly pairings, match schedules, and league operations.
+                            Founded and scaled an online chess league connecting 100+ players across 23 schools. Organized competitive tournaments, managed weekly pairings, match schedules, and complete league operational logistics.
                         </p>
                     </div>
                 </div>
@@ -251,42 +326,34 @@
         </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS & LANGUAGES -->
     <section id="skills" class="py-24 border-t border-border">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div class="md:col-span-4 reveal">
-                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">04. Expertise</h2>
-                    <h3 class="text-2xl font-semibold text-textMain">Technical Skills</h3>
+                    <h2 class="text-sm font-mono text-textMuted uppercase tracking-wider mb-2">06. Competencies</h2>
+                    <h3 class="text-2xl font-semibold text-textMain">Technical Skills & Languages</h3>
                 </div>
                 
-                <div class="md:col-span-8 grid grid-cols-2 gap-y-8 gap-x-8 reveal">
-                    <div>
+                <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-8 reveal">
+                    <div class="bg-white border border-border p-6 rounded-xl">
                         <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Programming & Web</h4>
-                        <ul class="space-y-1.5 text-sm text-textMuted font-mono">
-                            <li>Python, HTML, CSS</li>
-                        </ul>
+                        <p class="text-sm text-textMuted font-mono">Python, HTML, CSS</p>
                     </div>
 
-                    <div>
+                    <div class="bg-white border border-border p-6 rounded-xl">
                         <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Tools & Platforms</h4>
-                        <ul class="space-y-1.5 text-sm text-textMuted font-mono">
-                            <li>Linux, IBM LinuxONE, Microsoft Excel</li>
-                        </ul>
+                        <p class="text-sm text-textMuted font-mono">Linux, IBM LinuxONE, Microsoft Excel</p>
                     </div>
 
-                    <div>
-                        <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Technical Areas</h4>
-                        <ul class="space-y-1.5 text-sm text-textMuted">
-                            <li>AI Security, Computer Networking, Data Visualization, Statistical Analysis</li>
-                        </ul>
+                    <div class="bg-white border border-border p-6 rounded-xl">
+                        <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Technical Focus Areas</h4>
+                        <p class="text-sm text-textMuted">AI Security, Computer Networking, Data Visualization, Statistical Analysis</p>
                     </div>
 
-                    <div>
+                    <div class="bg-white border border-border p-6 rounded-xl">
                         <h4 class="text-sm font-semibold text-textMain mb-3 uppercase tracking-wide">Spoken Languages</h4>
-                        <ul class="space-y-1.5 text-sm text-textMuted">
-                            <li>English, Spanish, Mandarin Chinese</li>
-                        </ul>
+                        <p class="text-sm text-textMuted">English, Spanish, Mandarin Chinese</p>
                     </div>
                 </div>
             </div>
@@ -296,23 +363,27 @@
     <!-- CONTACT / FOOTER -->
     <section id="contact" class="py-24 border-t border-border bg-white">
         <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center reveal">
-            <h2 class="text-3xl font-bold text-textMain mb-6">Let's Connect</h2>
-            <p class="text-textMuted max-w-xl mx-auto mb-10 text-sm leading-relaxed">
+            <h2 class="text-3xl font-bold text-textMain mb-4">Let's Connect</h2>
+            <p class="text-textMuted max-w-xl mx-auto mb-8 text-sm leading-relaxed">
                 (929) 969-2316 | tx975@nyu.edu
             </p>
             
-            <a href="mailto:tx975@nyu.edu" class="inline-flex items-center gap-2 px-6 py-3 bg-textMain text-white rounded-lg text-sm font-medium hover:bg-zinc-800 transition-colors mb-16">
-                <i class="fas fa-envelope"></i> tx975@nyu.edu
-            </a>
+            <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <a href="mailto:tx975@nyu.edu" class="px-6 py-3 bg-textMain text-white rounded-lg text-sm font-medium hover:bg-zinc-800 transition-colors flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <button onclick="openResumeModal()" class="px-6 py-3 bg-white border border-border text-textMain rounded-lg text-sm font-medium hover:bg-zinc-50 transition-colors flex items-center gap-2">
+                    <i class="fas fa-file-pdf text-red-500"></i> View Resume PDF
+                </button>
+            </div>
             
-            <div class="flex items-center justify-center gap-6 border-t border-border pt-8">
+            <div class="flex items-center justify-center gap-8 border-t border-border pt-8">
                 <a href="https://www.linkedin.com/in/tin-chak-xu-3a391638a/" target="_blank" class="text-textMuted hover:text-textMain transition-colors text-sm font-medium">LinkedIn</a>
                 <a href="https://github.com/tinchakxu" target="_blank" class="text-textMuted hover:text-textMain transition-colors text-sm font-medium">GitHub</a>
-                <button onclick="openResumeModal()" class="text-textMuted hover:text-textMain transition-colors text-sm font-medium">Resume PDF</button>
             </div>
             
             <p class="text-xs text-textMuted mt-8 font-mono">
-                &copy; 2026 Tin Chak Xu.
+                &copy; 2026 Tin Chak Xu. Built with GitHub Pages.
             </p>
         </div>
     </section>
